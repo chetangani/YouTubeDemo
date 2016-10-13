@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YouTube Demo</string>
+    <string-array name="courses">
+        <item>"full_dot_net"</item>
+        <item>"csharp_freshers_demo_videos"</item>
+        <item>"csharp_exp_demo_videos"</item>
+        <item>"sql_server_freshers_demo_videos"</item>
+        <item>"sql_server_exp_demo_videos"</item>
+    </string-array>
+</resources>

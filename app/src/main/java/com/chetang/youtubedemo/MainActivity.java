@@ -31,8 +31,10 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     }
 
     @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-        youTubePlayer.loadVideo(VideoUrl);
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean restored) {
+        if (restored)
+            youTubePlayer.play();
+        else youTubePlayer.loadVideo(VideoUrl);
     }
 
     @Override
